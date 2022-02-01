@@ -1,0 +1,591 @@
+body {
+  margin: 0; /* set the body overall margin*/
+  padding: 0; /* set the body overall padding*/
+  line-height: 1.5; /* set the overall height of a line in the body */
+  background-color: #ffffff; /* Set the background color of the body */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* set the box-sizing: to border box so the padding and borders are included in the same width and height */
+}
+/* START OF NAVBAR CSS */
+nav {
+  height: 60px; /* set the total height of the navbar */
+  background-color: #ffffff; /* set the background color of the navbar */
+}
+.title {
+  width: 25%; /* set the total width of the .title */
+  height: 100%; /* set the total height of the .title*/
+  float: left; /* set the positioning of the .title to the left of its container */
+  display: flex; /* Set the display to flex to let the main homepage container become flexible */
+  justify-content: flex-start; /* By using display: flex so we can assign justify-content to the container in this case we set it to the flex start of the container .title */
+  align-items: center; /* adjust the alignment of items in the container .title to center */
+  color: #000000; /* set the color of the texts in the container .title*/
+  font-size: 32px; /* set the font texts in the container .title */
+}
+nav img {
+  float: left; /* set the positioning of the navbar image to left */
+  max-height: 100%; /* set the max height of the navbar image */
+  padding-left: 25px; /* set the left padding of the navbar image */
+}
+.navbar {
+  margin: 0; /* set the .navbar overall margin */
+  padding: 0; /* set the .navbar overall padding */
+  width: 30%; /* set the total width of the .navbar */
+  height: 100%; /* set the total height of the .navbar */
+  float: right; /* set the positioning of the .navbar to right */
+  display: flex; /* Set the display to flex to let the .navbar container become flexible */
+  align-items: center; /* adjust the alignment of items in the container .navbar to center */
+  justify-content: space-evenly; /* set the .navbar container to justify-content: space-evenly so that items will have equal space around them*/
+}
+.navbar a {
+  margin: 0; /* set the .navbar a overall margin */
+  padding: 0; /* set the .navbar a overall padding */
+  color: #000000; /* set the texts color in .navbar a */
+  font-size: 20px; /* set the texts font size in .navbar a */
+  text-decoration: none; /* removes the text underline in the .navbar a */
+}
+.navbar a:hover {
+  cursor: pointer; /* the cursor: property specifies the mouse cursor and what is displayed when pointing to an element in website */
+  font-weight: bolder; /* set the font weight of .navbar a when hovered by the user */
+  letter-spacing: 1px; /* set the letter spacing of the .navbar a when hovered by the user */
+  transition: all 0.5s ease; /* set the transition animation time to 0.5s when hovered by the user */
+}
+.sticky-navbar-container {
+  position: sticky; /* by using point:sticky then navbar container will be positioned based on the users scroll position */
+  top: 0; /* top set the sticky div container a certain distance at the browser window */
+  display: flex; /* Set the display to flex to let the .sticky-navbar-container become flexible */
+  flex-direction: row; /* By using display: flex so we can assign flex-directions to the container in this case we set it to row stacks the flex items horizontally */
+  padding-left: 25px; /* set the left padding of .sticky-navbar-container */
+  padding-right: 25px; /* set the right padding of .sticky-navbar-container */
+  width: 100%; /* set the total width of .sticky-navbar-container  */
+  z-index: 1;
+}
+/* sets and styles items in sticky nav bar */
+.sticky-navbar-internal-container {
+  width: 100%;
+  text-align: center; /* set the allignment of the texts in the .sticky-navbar-internal-container */
+  padding: 5px; /* set the total padding of .sticky-navbar-internal-container */
+  border: 1px solid #ffffff; /* set the border lines for the .sticky-navbar-internal-container */
+  background-color: #808080; /* set the background color for the .sticky-navbar-internal-container */
+}
+.sticky-navbar-internal-container a {
+  text-decoration: none; /* removes the text underline in the .sticky-navbar-internal-container a tags*/
+  color: #ffffff; /* set the texts color in the .sticky-navbar-internal-container a tags */
+  font-size: 16px; /* set the font size of the .sticky-navbar-internal-container a tags */
+}
+.sticky-navbar-internal-container a:hover {
+  cursor: pointer; /* the cursor: property specifies the mouse cursor and what is displayed when pointing to an element in website */
+  color: #000000; /* set the color of the text in the .sticky-navbar-internal-container a tags when hovered by the user */
+  font-weight: bold; /* set the font weight of the texts in the .sticky-navbar-internal-container a tags when hovered by the user */
+  letter-spacing: 3px; /* set the letter spacing of the texts in the .sticky-navbar-internal-container a tags when hovered by the user */
+  transition: all 0.5s ease; /* set the transition animation time to 0.5s when hovered by the user */
+}
+/* END OF NAVBAR CSS */
+
+/* START OF THE CSS FOR THE HOME-PAGE */
+.homepage-container {
+  width: 97%; /* Set the main homepage container width*/
+  margin: auto; /* Set the margin of the main homepage container to auto so that the container will be centered */
+  display: flex; /* Set the display to flex to let the main homepage container become flexible */
+  flex-direction: row; /* By using display: flex so we can assign flex-directions to the container in this case we set it to row stacks the flex items horizontally */
+  background: url("../img/developer2.jpg"); /* set the background image of the .homepage-container */
+  padding: 30px; /* set the total padding of the .homepage-container */
+}
+.homepage-internal-container-Left {
+  width: 100%;
+  background: #ffffff; /* Set the background color of homepage internal container */
+  padding: 15px; /* Set the overall padding of homepage internal container */
+  font-size: 17px; /* Set the font esize of the text in the homepage internal container */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /* change the font family of the text in homepage internal container */
+  word-spacing: 2px; /* Set the word spacing of the texts in homepage internal container */
+  text-align: center; /* Set the allignment of the text to center in homepage internal container */
+}
+.homepage-internal-container-Left:hover {
+  position: relative; /* set the homepage-internal-container to relative position to its normal position, it will cause it to be adjusted away from its normal position when hovered */
+  top: -10px; /* when the user hover to the homepage-internal-container it will trigger an animation to top position */
+  border-radius: 2%; /* set the border radius when hovered by the user */
+  box-shadow: #000000 0px 0px 50px 0px; /* set a box shadow effect on the homepage-internal-container when hovered by the user */
+  transition: all 0.5s ease; /* set the transition animation time to 0.5s when hovered by the user */
+}
+.homepage-internal-container-Left a:hover {
+  background-color: #00ffff; /* Set the background color of the a tag when hovered by the user */
+  letter-spacing: 1px; /* Set letter spacing to the a tag when hovered by the user */
+  font-weight: bolder; /* The text in the a tag will be bolder when hovered by the user */
+  transition: all 1s ease; /* set the transition animation time to 1s when hovered by the user */
+  color: #000000; /* Set the color of the text of the a tag text when hovered by the user */
+}
+.homepage-internal-container-Left img {
+  width: 100%; /* Set the .homepage-internal-container-Left img width */
+  height: auto; /* Set the .homepage-internal-container-Left img height */
+}
+.homepage-internal-container-Left h2 {
+  color: #000000; /* Set the color of the text in homepage internal container H2*/
+  text-align: center; /* Allign the text of the homepage internal container H2 to center*/
+}
+.homepage-internal-container-Left a {
+  text-decoration: none; /* Remove the underline in the a tag text */
+  text-align: center; /* Text allign: center will put any text in a tag to center position */
+  display: block; /* Set the display of the a tag to block to take the full width available and stretches from left to right as far as it can */
+  border: 1px solid #000000; /* Set a border for the a tag */
+  background-color: #c0c0c0; /* Set the background color of the a tag */
+  color: #ffffff; /* Set the color of any text in the a tag */
+}
+.homepage-internal-container-Left img {
+  display: block; /* Set the display of the img to block to take the full width available and stretches from left to right as far as it can */
+}
+.homepage-internal-container-Middle {
+  width: 100%;
+  background: #ffffff; /* Set the background color of homepage internal container */
+  padding: 15px; /* Set the overall padding of homepage internal container */
+  font-size: 17px; /* Set the font size of the text in the homepage internal container */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /* change the font family of the text in homepage internal container */
+  word-spacing: 2px; /* Set the word spacing of the texts in homepage internal container */
+  text-align: center; /* Set the allignment of the text to center in homepage internal container */
+}
+.homepage-internal-container-Middle:hover {
+  position: relative; /* set the homepage-internal-container to relative position to its normal position, it will cause it to be adjusted away from its normal position when hovered */
+  top: -10px; /* when the user hover to the homepage-internal-container it will trigger an animation to top position */
+  border-radius: 2%; /* set the border radius when hovered by the user */
+  box-shadow: #000000 0px 0px 50px 0px; /* set a box shadow effect on the homepage-internal-container when hovered by the user*/
+  transition: all 0.5s ease; /* set the transition animation time to 0.5s when hovered by the user */
+}
+.homepage-internal-container-Middle a:hover {
+  background-color: #00ffff; /* Set the background color of the a tag when hovered by the user */
+  letter-spacing: 1px; /* Set letter spacing to the a tag when hovered by the user */
+  font-weight: bolder; /* The text in the a tag will be bolder when hovered by the user */
+  transition: all 1s ease; /* set the transition animation time to 1s when hovered by the user */
+  color: #000000; /* Set the color of the text of the a tag text when hovered by the user */
+}
+.homepage-internal-container-Middle img {
+  width: 100%; /* Set the .homepage-internal-container-Left img width */
+  height: auto; /* Set the .homepage-internal-container-Left img height */
+}
+.homepage-internal-container-Middle h2 {
+  color: #000000; /* Set the color of the text in homepage internal container H2*/
+  text-align: center; /* Allign the text of the homepage internal container H2 to center*/
+}
+.homepage-internal-container-Middle a {
+  text-decoration: none; /* Remove the underline in the a tag text */
+  text-align: center; /* Text allign: center will put any text in a tag to center position */
+  display: block; /* Set the display of the a tag to block to take the full width available and stretches from left to right as far as it can */
+  border: 1px solid #000000; /* Set a border for the a tag */
+  background-color: #c0c0c0; /* Set the background color of the a tag */
+  color: #ffffff; /* Set the color of any text in the a tag */
+}
+.homepage-internal-container-Middle img {
+  display: block; /* Set the display of the img to block to take the full width available and stretches from left to right as far as it can */
+}
+.homepage-internal-container-Right {
+  width: 100%;
+  background: #ffffff; /* Set the background color of homepage internal container */
+  padding: 15px; /* Set the overall padding of homepage internal container */
+  font-size: 17px; /* Set the font esize of the text in the homepage internal container */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /* change the font family of the text in homepage internal container */
+  word-spacing: 2px; /* Set the word spacing of the texts in homepage internal container */
+  text-align: center; /* Set the allignment of the text to center in homepage internal container */
+}
+.homepage-internal-container-Right:hover {
+  position: relative; /* set the homepage-internal-container to relative position to its normal position, it will cause it to be adjusted away from its normal position when hovered */
+  top: -10px; /* when the user hover to the homepage-internal-container it will trigger an animation to top position */
+  border-radius: 2%; /* set the border radius when hovered by the user */
+  box-shadow: #000000 0px 0px 50px 0px; /* set a box shadow effect on the homepage-internal-container when hovered by the user*/
+  transition: all 0.5s ease-in-out; /* set the transition animation time to 0.5s when hovered by the user */
+}
+.homepage-internal-container-Right a:hover {
+  background-color: #00ffff; /* Set the background color of the a tag when hovered by the user */
+  letter-spacing: 1px; /* Set letter spacing to the a tag when hovered by the user */
+  font-weight: bolder; /* The text in the a tag will be bolder when hovered by the user */
+  transition: all 1s ease; /* set the transition animation time to 1s when hovered by the user */
+  color: #000000; /* Set the color of the text of the a tag text when hovered by the user */
+}
+.homepage-internal-container-Right img {
+  width: 100%; /* Set the .homepage-internal-container-Left img width */
+  height: auto; /* Set the .homepage-internal-container-Left img height */
+}
+.homepage-internal-container-Right h2 {
+  color: #000000; /* Set the color of the text in homepage internal container H2*/
+  text-align: center; /* Allign the text of the homepage internal container H2 to center*/
+}
+.homepage-internal-container-Right a {
+  text-decoration: none; /* Remove the underline in the a tag text */
+  text-align: center; /* Text allign: center will put any text in a tag to center position */
+  display: block; /* Set the display of the a tag to block to take the full width available and stretches from left to right as far as it can */
+  border: 1px solid #000000; /* Set a border for the a tag */
+  background-color: #c0c0c0; /* Set the background color of the a tag */
+  color: #ffffff; /* Set the color of any text in the a tag */
+}
+.homepage-internal-container-Right img {
+  display: block; /* Set the display of the img to block to take the full width available and stretches from left to right as far as it can */
+}
+/* END OF THE CSS FOR THE HOME-PAGE */
+
+/* START OF CSS FOR THE 3 PAGES OF WEBSITE (HTML,CSS,WEB DESIGN) */
+.website-container {
+  max-width: 100%; /* set the total width of .website-container */
+  height: auto; /* set the total height of .website-container */
+  margin: 25px; /* set the total margin of .website-container*/
+  display: flex; /* Set the display to flex to let the main homepage container become flexible */
+  flex-direction: row; /* By using display: flex so we can assign flex-directions to the container in this case we set it to row stacks the flex items horizontally */
+}
+.top-img-container {
+  width: 100%;
+}
+.top-img-container img {
+  width: 100%; /* set the total width of .top-img-container img */
+  height: auto; /* set the total heigh of .top-img-container img */
+}
+.first-internal-container-left {
+  width: 100%;
+  font-size: 22px; /* set the font size of all text in .first-internal-container-left */
+  text-align: center; /* set the text allignment of all the texts in .first-internal-container-left */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /* set the font family of all the texts in the .first-internal-container-left */
+}
+.first-internal-container-right img {
+  width: 100%; /* set the total width of .first-internal-container-right img */
+  height: auto; /* set the total heigh of .first-internal-container-right img */
+  padding: 10px; /* set the total padding of .first-internal-container-right img*/
+}
+.first-internal-container-right {
+  width: 100%;
+}
+.second-internal-container-left {
+  width: 100%;
+  background: #ffffff; /* set the background color of .second-internal-container-left */
+}
+.second-internal-container-right {
+  width: 100%;
+  font-size: 22px; /* set the font size of all text in .second-internal-container-right */
+  text-align: center; /* set the text allignment of all the texts in .second-internal-container-right */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /* set the font family of all the texts in the .second-internal-container-right */
+}
+.second-internal-container-left img {
+  width: 100%; /* set the total width of .second-internal-container-left img */
+  height: auto; /* set the total heigh of .second-internal-container-left img */
+  padding: 10px; /* set the total padding of .second-internal-container-left img */
+}
+/* END OF CSS FOR THE 3 PAGES OF WEBSITE (HTML,CSS,WEB DESIGN) */
+
+/* BIO FLIP CARD EFFECT START */
+
+/* BIO FLIP CARD CONTAINER 1 START */
+/* styles the main flex container holding three white containers side by side */
+.Bio-card-container-1 {
+  display: flex; /* Set the display to flex to let the main homepage container become flexible */
+  flex-direction: row; /* By using display: flex so we can assign flex-directions to the container in this case we set it to row stacks the flex items horizontally */
+  max-width: 1000px; /* set the max width of the .Bio-card-container-1 */
+  margin: auto; /* set the total margin of the .Bio-card-container-1 to put it in the center of the page*/
+  margin-top: 50px; /* set the top margin of the .Bio-card-container-1 */
+  background-color: #000000; /* set the background color of the .Bio-card-container-1 */
+}
+/* styles the three white containers holding each of the front (yellow) and back (black) cards */
+.Bio-card-internal-container-1 {
+  display: flex;
+  justify-content: center;
+  flex: 1; /* this means the size of all of the other elements will have the same width as their content, */
+  margin: 20px; /* set the margin size of the .Bio-card-internal-container-1 */
+  background-color: #000000; /* set the background color of the .Bio-card-internal-container-1 */
+}
+/* styles the card holding the front and back faces; this card is invisible to viewers so that only the front and back cards are visible */
+.Main-card-1 {
+  width: 100%; /* set the total width of the .Main-card-1 */
+  height: auto; /* set the total height of the .Main-card-1 */
+  transform-style: preserve-3d; /* set the transform style to preserve 3d to let the user see the back of the card instead of just seeing the front card in reverse */
+  transition: all 2s ease; /* the transformation animation duration when getting flipped */
+}
+/* styles the psuedo class controlling the flip effect on mouseover and mouseout */
+.Main-card-1:hover {
+  transform: rotateY(
+    180deg
+  ); /* use the transform: rotateY so that when the user hovered to the image it will rotate in 180 degrees in Y axis horizontally */
+}
+/* styles the front of the card which shows by default */
+.Card-front-1 {
+  width: 100%; /* set the total width .Card-front-1 */
+  height: auto; /* set the total height .Card-front-1 */
+  background: #000000; /* set the background color of the .Card-front-1 */
+  min-height: 320px; /* set the min height of the .Card-front-1 */
+}
+.Card-front-1 img {
+  width: 100%; /* set the total width of the Card-front-1 image*/
+  height: 100%; /* set the total height of the Card-front-1 image*/
+}
+/* styles the back (black) face of the card which shows on mouseover */
+.Card-back-1 {
+  position: absolute; /* set the position to absolute so that the .Card-back-1 element can be placed anywhere on the page */
+  top: 0; /* set the position of the .Card-back-1 to top: 0 to keep it at top position when the user hovered to the front card*/
+  width: 100%; /* set the total width of the .Card-back-1 */
+  height: 100%; /* set the total height of the .Card-back-1 */
+  min-height: 320px; /* set the min-height of the .Card-back-1 */
+  padding: 15px; /* set the total padding of the .Card-back-1 */
+  backface-visibility: hidden; /* The backface-visibility property controls the reverse sight of the .Card-back-1 div */
+  background: #ffffff; /* set the background color of the .Card-back-1 */
+  color: #000000; /* set the color of the texts of the .Card-back-1 */
+  font-family: Roboto, Helvetica, sans-serif; /* set the font family of the texts of the .Card-back-1 */
+  text-align: center; /* set the text allignment of the texts of the .Card-back-1 */
+  font-size: 12px; /* set the font size of the .Card-back-1 */
+  transform: rotateY(
+    180deg
+  ); /* use the transform: rotateY so that when the user hovered to the front card then the back card will rotate back 180 degrees in Y axis horizontally */
+}
+/* BIO FLIP CARD CONTAINER 1 END */
+
+/* BIO FLIP CARD CONTAINER 2 START */
+/* styles the main flex container holding three white containers side by side */
+.Bio-card-container-2 {
+  display: flex; /* Set the display to flex to let the main homepage container become flexible */
+  flex-direction: row; /* By using display: flex so we can assign flex-directions to the container in this case we set it to row stacks the flex items horizontally */
+  max-width: 650px; /* set the max width of the .Bio-card-container-2 */
+  margin: auto; /* set the total margin of the .Bio-card-container-2 to put it in the center of the page*/
+  background-color: #000000; /* set the background color of the .Bio-card-container-2 */
+  margin-bottom: 50px;
+}
+/* styles the three white containers holding each of the front (yellow) and back (black) cards */
+.Bio-card-internal-container-2 {
+  flex: 1; /* this means the size of all of the other elements will have the same width as their content div, */
+  margin: 20px; /* set the margin size of the .Bio-card-internal-container-1 */
+  background-color: #000000; /* set the background color of the .Bio-card-internal-container-1 */
+}
+/* styles the card holding the front and back faces; this card is invisible to viewers so that only the front (yellow) and back (black) cards are visible */
+.Main-card-2 {
+  width: 100%; /* set the total width of the .Main-card-1 */
+  height: auto; /* set the total height of the .Main-card-1 */
+  transform-style: preserve-3d; /* set the transform style to preserve 3d to let the user see the back of the card instead of just seeing the front card in reverse */
+  transition: all 2s ease; /* the transformation animation duration when getting flipped */
+}
+/* styles the psuedo class controlling the flip effect on mouseover and mouseout */
+.Main-card-2:hover {
+  transform: rotateY(
+    180deg
+  ); /* use the transform: rotateY so that when the user hovered to the image it will rotate in 180 degrees in Y axis horizontally */
+}
+/* styles the front (yellow) face of the card which shows by default */
+.Card-front-2 {
+  width: 100%; /* set the total width .Card-front-2 */
+  height: auto; /* set the total height .Card-front-2 */
+  background: #000000; /* set the background color of the .Card-front-2 */
+  min-height: 320px; /* set the min height of the .Card-front-2 */
+}
+.Card-front-2 img {
+  width: 100%; /* set the total width of the Card-front-2 image*/
+  height: 100%; /* set the total height of the Card-front-2 image*/
+}
+/* styles the back (black) face of the card which shows on mouseover */
+.Card-back-2 {
+  position: absolute; /* set the position to absolute so that the .Card-back-1 element can be placed anywhere on the page */
+  top: 0; /* set the position of the .Card-back-1 to top: 0 to keep it at top position when the user hovered to the front card*/
+  width: 100%; /* set the total width of the .Card-back-1 */
+  height: 100%; /* set the total height of the .Card-back-1 */
+  min-height: 320px; /* set the min-height of the .Card-back-1 */
+  padding: 15px; /* set the total padding of the .Card-back-1 */
+  backface-visibility: hidden; /* The backface-visibility property controls the reverse sight of the .Card-back-1 div */
+  background: #ffffff; /* set the background color of the .Card-back-1 */
+  color: #000000; /* set the color of the texts of the .Card-back-1 */
+  font-family: Roboto, Helvetica, sans-serif; /* set the font family of the texts of the .Card-back-1 */
+  text-align: center; /* set the text allignment of the texts of the .Card-back-1 */
+  font-size: 12px; /* set the font size of the .Card-back-1 */
+  transform: rotateY(
+    180deg
+  ); /* use the transform: rotateY so that when the user hovered to the front card then the back card will rotate back 180 degrees in Y axis horizontally */
+}
+/* BIO FLIP CARD CONTAINER 2 END */
+/* END OF BIO FLIP CARD EFFECT */
+/* END OF CSS FOR THE 3 PAGES OF WEBSITE (HTML,CSS,WEB DESIGN,BIO) */
+
+/* START OF THE FOOTER CSS */
+.footer {
+  background-color: #24262b; /* set the background color of the .footer*/
+  padding-top: 10px; /* set the top padding of the footer */
+  padding-bottom: 10px; /* set the top padding of the footer */
+}
+.footer-container {
+  max-width: 1000px; /* set the max-width of the footer main container */
+  margin: auto; /* set the margin to auto of the footer main container to set it to center of the footer */
+}
+.footer-row {
+  display: flex; /* Set the display to flex to let the main homepage container become flexible */
+  flex-direction: row; /* By using display: flex so we can assign flex-directions to the container in this case we set it to row stacks the flex items horizontally */
+}
+.footer-row img {
+  width: 200px; /* set the width of .footer-row img */
+  height: 100px; /* set the height of .footer-row img */
+}
+ul {
+  list-style: none; /* Removes the bullet point in the ul tag */
+}
+.footer-col {
+  width: 25%; /* set the width of .footer-col container */
+  padding-left: 10px; /* set the left padding of .footer-col container */
+  color: #bbbbbb; /* set the text color of the c.footer-col container */
+}
+.footer-col h4 {
+  font-size: 20px; /* set the font size of the heading in the footer-col .container */
+  color: #ffffff; /* set the text color of the heading in the footer-col .container */
+  margin-bottom: 15px; /* set the bottom margin of the heading in the footer-col .container */
+  font-weight: bold; /* set the font weight of the heading in the footer-col .container */
+}
+.footer-col ul li a {
+  font-size: 15px; /* set the font size of the texts in footer ul li a tags */
+  text-decoration: none; /* removes the underline on the footer ul li a tags */
+  color: #bbbbbb; /* set the color of the text on the footer ul li a tags */
+  transition: all 0.5s ease; /* set the transition animation time of the footer ul li a tags to 0.5s when hovered by the user */
+}
+.footer-col ul li a:hover {
+  color: #ffffff; /* set the texts color of the footer ul li a tags when hovered by the user */
+  padding-left: 15px; /* set the padding to the left for the footer ul li a tags when hovered by the user */
+}
+/* END OF THE FOOTER CSS */
+
+/* START OF GROUP BIO HOVER CARD EFFECT CSS */
+.hover-container-1 {
+  position: relative; /* set the hover container to positioned relative to its normal position */
+  width: 600px; /* Set the main hover container */
+  height: 200px; /* Set the height of main hover container */
+  margin: auto; /* Set the margin of the main hover container to auto to put it in center */
+  margin-top: 10px; /* Set the top margin of the main hover container */
+  margin-bottom: 10px; /* Set the bottom margin of the main hover container */
+  border-radius: 25px; /* Set the border radius for the main hover container */
+  background: url("../img/developer2.jpg"); /* Set the background of the group bio container */
+  background-size: cover; /* Resize the background to cover the entire container */
+  transition: all 0.5s ease-in-out; /* makes the hover transition smoother */
+}
+/*THIS IS THE INTERNAL CONTAINER THAT SHOWS ON HOVER*/
+.internal-hover-container-1 {
+  position: relative; /* set the internal hover container to positioned relative to its normal position */
+  width: 600px; /* set the width of the .internal-hover-container-1 */
+  height: 200x; /* set the height of the .internal-hover-container-1 */
+  box-sizing: border-box; /* set the box size to border-box to avoid border leakage */
+  padding: 60px; /* Set the padding of the text to 50px */
+  font-size: x-large; /* Set the font size of the text in internal-hover*/
+  text-align: center; /* Set the text allignment of the text inside internal-hover to center */
+  background: rgba(0, 0, 0, 0.7); /* Set the color to transparent black */
+  color: white; /* Set the text to white when hovered */
+  opacity: 0; /* Set the opacity to 0 to face out the transparent color in hover div */
+  transition: all 0.5s ease-in-out; /* makes the hover transition smoother */
+  border-radius: 25px; /* Set the border radius for the internal hover container */
+}
+.hover-container-1:hover {
+  transform: scale(1.05); /* transform the hover container scale when hovered */
+  box-shadow: rgb(82, 82, 82) 0px 0px 15px 0px; /* Set the box shadow of the of the bio hover container when hovered */
+}
+.hover-tag {
+  text-decoration: none; /* Remove the hover tag underline */
+}
+
+/*THIS IS THE INTERNAL CONTAINER THAT SHOWS ON HOVER*/
+
+/* THIS IS THE CSS CODE THAT TARGETS THE INTERNAL HOVER CONTAINER */
+.hover-container-1:hover .internal-hover-container-1 {
+  opacity: 1; /* Set the opacity to 1 to see the transition of the color when hovered */
+}
+/* END OF GROUP BIO HOVER CARD EFFECT CSS */
+
+/* Start of media Queries */
+@media screen and (max-width: 768px) {
+  /* Media queries is used for responsive web design for all browser window including phones */
+  .navbar {
+    width: 0%; /* set the div vlass .navbar total width when resizing the browser */
+  }
+  .navbar a {
+    visibility: hidden; /* set the navbar div class .navbar a tag to invisible when resizing the browser */
+  }
+  .title {
+    font-size: 18px; /* set the font size of the .title div class when resizing the browser*/
+  }
+  nav img {
+    padding-left: 0; /* remove padding of the navbar image to 0 when resizing the browser */
+  }
+  .sticky-navbar-internal-container a:hover {
+    cursor: pointer;
+    color: black; /* set the color of the texts in the .sticky-navbar-internal-container a tags when resizing the browser */
+    font-weight: bold; /* set the text font weight in the .sticky-navbar-internal-container a tags when resizing the browser */
+    letter-spacing: 1px; /* set the letter spacing for the texts in the .sticky-navbar-internal-container a tags when resizing the browser */
+    transition: all 0.5s ease; /* set the animation transition for the texts in the .sticky-navbar-internal-container a tags when resizing the browser*/
+  }
+  .homepage-image-container img {
+    width: 100%; /* set the total width of .homepage-image-container image when resizing the browser */
+    height: auto; /* set the total height of .homepage-image-container image when resizing the browser */
+  }
+  .top-img-container img {
+    width: 100%; /* set the total width of .top-img-container image when resizing the browser */
+    height: auto; /* set the total height of .top-img-container image when resizing the browser */
+  }
+  .homepage-container {
+    flex-direction: column; /* set the flex direction horizontally of .top-img-container when resizing the browser */
+  }
+  .footer-col {
+    width: 50%; /* set the total width of .footer-col container when resizing the browser */
+    margin-bottom: 15px; /* set the bottom margin of the .footer-col container when resizing the browser */
+  }
+  .footer-row {
+    flex-direction: column; /* set the flex direction horizontally of .footer-row container when resizing the browser */
+  }
+  .footer-row img {
+    padding-top: 30px; /* set the top padding of the .footer-row image when resizing the browser */
+    padding-bottom: 20px; /* set the bottom padding of the .footer-row image when resizing the browser */
+    padding-right: 50px; /* set the right padding of the .footer-row image when resizing the browser */
+  }
+  .website-container {
+    flex-direction: column; /* set the flex direction horizontally of .website-container when resizing the browser */
+  }
+  .bio-internal-container {
+    flex-direction: column; /* set the flex direction horizontally of .bio-internal-container when resizing the browser */
+  }
+  .Card-front-1{
+    width: 75%;
+    padding: 10px;
+    margin: auto;
+  }
+  .Card-front-2{
+    width: 75%;
+    padding: 10px;
+    margin: auto;
+  }
+  .sticky-navbar-internal-container {
+    flex: 1; /* set the total flex size of the .sticky-navbar-internal-container when resizing the browser */
+  }
+  .sticky-navbar-internal-container a {
+    font-size: 13px; /* set the text font size of the .homepage-internal-container-Left  when resizing the browser */
+  }
+  .sticky-navbar-container {
+    padding-left: 0; /* set the left padding of the .sticky-navbar-container when resizing the browser */
+    padding-right: 0; /* set the right padding of the .sticky-navbar-container when resizing the browser */
+  }
+  .first-internal-container-left {
+    font-size: 15px; /* set the text font size of the .first-internal-container-left when resizing the browser */
+  }
+  .second-internal-container-right {
+    font-size: 15px; /* set the text font size of the .second-internal-container-right  when resizing the browser */
+  }
+  .footer-col h4 {
+    font-size: 20px; /* set the text font size of the .footer-col h4  when resizing the browser */
+  }
+  .footer-col ul li a {
+    font-size: 15px; /* set the text font size of the .footer-col ul li a tags when resizing the browser */
+  }
+  .footer {
+    padding-top: 5px; /* set the top padding of the .footer when resizing the browser */
+    padding-bottom: 0; /* set the bottom padding of the .footer when resizing the browser */
+  }
+  .footer-row img {
+    width: 200px; /* set the total width of .footer-row image when resizing the browser */
+    height: 125px; /* set the total height of .footer-row image when resizing the browser */
+  }
+  .Bio-card-container-1 {
+    flex-direction: column; /* set the flex direction horizontally of .Bio-card-container-1  when resizing the browser */
+  }
+  .Bio-card-container-2 {
+    flex-direction: column; /* set the flex direction horizontally of .Bio-card-container-2 when resizing the browser */
+  }
+  .homepage-internal-container-Left {
+    font-size: smaller; /* set the text font size of the .homepage-internal-container-Left  when resizing the browser */
+  }
+  .homepage-internal-container-Middle {
+    font-size: smaller; /* set the text font size of the .homepage-internal-container-Middle  when resizing the browser */
+  }
+  .homepage-internal-container-Right {
+    font-size: smaller; /* set the text font size of the .homepage-internal-container-Right  when resizing the browser */
+  }
+}
+/* End of media Queries */
